@@ -1,6 +1,5 @@
-Wraps py-amqplib to handle failure/reconnection 
-             to AMQP servers.
- 
+Wraps py-amqplib to handle failure/reconnection to AMQP servers.
+
    Requires:
        * py-amqplib = 0.6.1
        * demjson >= 1.4
