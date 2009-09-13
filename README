@@ -3,7 +3,7 @@ Wraps py-amqplib to handle failure/reconnection
  
    Requires:
        * py-amqplib = 0.6.1
-	   * demjson >= 1.4
+       * demjson >= 1.4
 
 (C)2009 DigiTar, All Rights Reserved
 Distributed under the BSD License
