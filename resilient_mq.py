@@ -65,7 +65,7 @@ class ResilientMQ(object):
 
             SUCCESS - Nothing.
 
-            FAILURE - No return, but raises AMQPConnectionException or AMQPChannelException.
+            FAILURE - No return, but raises Exception.
         """
         for server in self.servers:
             try:
@@ -174,7 +174,7 @@ class ResilientMQ(object):
         if isinstance(queue, dict):
             for key in ['name', 'durable', 'auto_delete']:
                 if not queue.has_key(key):
-                    raise Exception("Queue dictionary missing queue key '%s' key." % key)
+                    raise Exception("Queue dictionary missing queue '%s' key." % key)
         self.queue = queue
         
         self.routing_key = routing_key
