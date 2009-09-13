@@ -93,7 +93,7 @@ class ResilientMQ(object):
                 if self.routing_key != "":
                     self.mq_chan.basic_publish(amqp.Message("Connection Test"),
                                                exchange=self.exchange['name'],
-                                               routing_key=self.routing_key)
+                                               routing_key="conn_test")
                                                
                 # Declare queues and bindings (if spec'd) to prevent blackholing of messages post 
                 # MQ cluster failover.
