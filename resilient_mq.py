@@ -1,6 +1,6 @@
 ####################################################################
 # FILENAME: lib/resilient_mq.py
-# PROJECT: Charon
+# PROJECT: py-resilient_mq
 # DESCRIPTION: Wraps py-amqplib to handle failure/reconnection 
 #              to AMQP servers.
 # 
