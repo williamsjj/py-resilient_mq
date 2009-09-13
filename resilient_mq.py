@@ -147,7 +147,7 @@ class ResilientMQ(object):
                     {"name" : 'queue_name',
                      "durable" : True/False,
                      "auto_delete" : True/False }
-            routing_key (string) - If not None, routing key to use to bind queue to exchange.
+            routing_key (string) - If not "", routing key to use to bind queue to exchange.
             logging (boolean) - If True, print debugging/logging/status messages on errors.
             
         Returns:
