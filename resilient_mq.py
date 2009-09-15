@@ -222,7 +222,7 @@ class ResilientMQ(object):
         # Make sure the connection/channel still exists.
         for retries in range(0,retry_attempts):
             try:
-                if isinstance(self.mq_chan, amqp.Channel) and \
+                if isinstance(self.mq_chan, amqp.channel.Channel) and \
                    isinstance(self.mq_conn, amqp.Connection):
                     self.mq_chan.basic_publish(msg,
                                                exchange=exchange_name,
